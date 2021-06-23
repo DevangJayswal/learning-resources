@@ -1,0 +1,31 @@
+create new project
+ng new my-app --no-strict
+
+install material
+ng add @angular/material
+
+test
+ng test -> inside angular project, will compile all our application code and specifications using karma `test run`
+karma is used internally by our angular cli
+
+ng test is also going to launch an instance of the Chrome browser where the test are going to be executed
+
+hot reload -> we can configure 
+we can disable hot reload using `ng test --no-watch`
+
+when use `webpack` we do not need `.compilleComponents()`
+
+jasmine assertion utility method
+
+we use `beforeEach` because we do not want to write same code again and again in every `it` function
+just to avoid code redundancy. we use write something in `beforeEach` that is going to be used in every `it` function 
+if we have two `it` function then `beforeEach` is going to be called two times
+
+TestBed -> allow us to provide the dependencies to our services by using dependency injection instead 
+
+xdisable() -> to disable the complete test suite of the service
+xit() -> to disable `it` function  
+fdescribe() -> if we want to focus only one particular test suite 
+fit() -> focus only on one test 
+
+ng generate component banner --inline-template --inline-style --module app
